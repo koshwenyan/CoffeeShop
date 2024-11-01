@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.top{
+	justify-content: end;
+	padding: 5px;
+	background: #ff523b;
+	display: flex;
+}
+.top i{
+	font-size: 1.2rem;
+	font-weight: bold;
+	display: none;
+}
+nav{
+	display: inline-block;
+}
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 0rem 1.3rem;
+	color: black;
+}
+.bander{
+	width: 100%;
+
+}
+@media screen and (max-width:1000px)
+{
+	.top{
+		position: relative;
+	}
+	nav{
+		display: none;
+		position: absolute;
+		background: black;
+	}
+	.top i{
+		display: block;
+	}
+	nav a{
+		display: block;
+		color: white;
+	}
+}
+.top:hover nav{
+	display: inline-block;
+}
+/*-------body------*/
+.row
+{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+h2{
+	margin-left: 20px;
+	border-bottom: 3px solid #ff523b;
+	padding: 15px;
+}
+.btn{
+	margin-left: 20px;
+	border: 1px solid black;
+	padding: 15px;
+	text-decoration: none;
+	
+}
+.btn:hover{
+	background: #ff523b;
+}
+.col-4{
+	flex-basis: 20%;
+	padding: 10px;
+	min-width: 200px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+	justify-content: space-around;
+}
+.col-4 img{
+	width: 100%;
+}
+.col-4:hover{
+	transform: translateY(-10px);
+}
+.bi{
+	color: #black;
+}
+.col-2{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
