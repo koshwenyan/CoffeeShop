@@ -7,11 +7,14 @@
 	padding: 5px;
 	background: #ff523b;
 	display: flex;
+	position: fixed;
+	width: 100%;
 }
 .top i{
 	font-size: 1.2rem;
 	font-weight: bold;
 	display: none;
+
 }
 nav{
 	display: inline-block;
@@ -29,7 +32,7 @@ nav a{
 @media screen and (max-width:1000px)
 {
 	.top{
-		position: relative;
+		position: fixed;
 	}
 	nav{
 		display: none;
